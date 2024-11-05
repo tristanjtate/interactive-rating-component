@@ -14,67 +14,100 @@
     <title>Document</title>
   </head>
   <!-- body edits here!-->
-  <body class="bg-my-black font-overpass flex items-center justify-center min-h-screen">
-    <!-- create form -->
+  <body
+    class="bg-my-black font-overpass flex items-center justify-center min-h-screen px-6 sm:px-0"
+  >
+    <!-- rating form starts here -->
     <form
       action=""
-      class="bg-gradient-to-tr from-very-dark-blue to-my-dark-blue flex-col space-y-4 justify-center items-center w-1/2 max-w-96 rounded-3xl h-auto p-6 "
+      class="bg-gradient-to-tr from-very-dark-blue to-my-dark-blue flex-col space-y-4 justify-center items-center  min-w-[300px] max-w-sm mx-auto rounded-3xl h-auto p-6 sm:mx-32 hidden"
     >
       <!-- star icon image -->
       <div class="bg-my-dark-blue p-2 rounded-full inline-flex">
         <img src="/images/icon-star.svg" alt="star icon" class="w-4 h-4" />
       </div>
       <!-- container for heading and paragraph -->
-      <div class="space-y-4 flex flex-col ">
+      <div class="space-y-4 flex flex-col">
         <h2 class="text-white text-2xl font-bold">How did we do?</h2>
-        <p class="text-my-light-grey text-sm  max-w-80 text-balance p-1 ">
+        <p class="text-my-light-grey text-sm max-w-80 text-balance p-1">
           Please let us know how we did with your support request. All feedback
           is appreicated to help us improve our offering!
         </p>
       </div>
       <!-- container for buttons and submit -->
-      <div class="space-y-6 flex flex-col justify-center items-center p-2">
+      <div class="space-y-6 flex flex-col items-center p-2 w-full  ">
         <!-- 1-5 buttons -->
-        <div class="flex flex-row space-x-5">
+        <div class="flex justify-center gap-x-4 w-full max-w-xs ">
           <!--  -->
           <button
             type="button  "
-            class="text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
+            class="flex-auto  max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12  hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
           >
             1
           </button>
           <button
             type="button "
-            class="text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
+            class="   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
           >
             2
           </button>
           <button
             type="button "
-            class="text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
+            class="   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
           >
             3
           </button>
           <button
             type="button "
-            class="text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
+            class="   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
           >
             4
           </button>
           <button
             type="button "
-            class="text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
+            class="   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
           >
             5
           </button>
         </div>
         <!-- submit button -->
-        <div>
-          <button type="submit" class="bg-my-orange text-md font-bold tracking-wider uppercase h-12 w-80 rounded-full  hover:bg-white  hover:font-bold transition-colors 400ms active:scale-105">
+        <div class="max-w-xs w-full">
+          <button
+            type="submit"
+            class="w-full  max-w-xs bg-my-orange text-md font-bold tracking-wider uppercase h-12  rounded-full hover:bg-white hover:font-bold transition-colors 400ms active:scale-105"
+          >
             Submit
           </button>
         </div>
       </div>
     </form>
+
+
+
+    <!-- thank you state component -->
+      <div
+      id="thankYouComponent"
+      class="bg-gradient-to-tr from-very-dark-blue to-my-dark-blue grid justify-items-center text-center space-y-7  min-w-[200px] max-w-sm mx-auto rounded-3xl h-auto px-2 py-8 sm:mx-32 "
+    >
+      <!-- thank you illustration -->
+     
+      <img src="/images/illustration-thank-you.svg" alt="star icon" class="w-50 h-50" />
+      <!-- section shown box -->
+       <p id="selectedRating" class="bg-gray-800 p-2 rounded-full text-my-orange text-sm">You selected X out of 5</p>
+      
+      <!-- container for heading and paragraph -->
+      <div class="space-y-4 flex flex-col">
+        <h2 class="text-white text-2xl font-bold">Thank you!</h2>
+        <p class="text-my-light-grey text-sm max-w-80 text-pretty p-1">
+          We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+        </p>
+      </div>
+     
+        </div>
+      </div>
+    </div>
+
+
+
   </body>
 </html>
