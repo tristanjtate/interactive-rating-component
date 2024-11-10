@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Screenshots
 
-![](./images/ratingScreen.png)
-![](./images/thankScreen.png)
+![](./docs/images/ratingScreen.png)
+![](./docs/images/thankScreen.png)
 
 
 
