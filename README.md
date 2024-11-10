@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-compoent-17cPQdiKpP)
+- Live Site: [GitHub Pages](https://tristanjtate.github.io/interactive-rating-component/m) 
 
 ## My process
 
