@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
 
 ## My process
 
@@ -71,7 +71,7 @@ I will continue my knowledge in web development, and playing around with DOM Man
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - Tailwind CSS documentation is extremely useful and the interface for documentation is AWESOME!
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs/utility-first) - Tailwind CSS documentation is extremely useful and the interface for documentation is AWESOME!
 
 
 
