@@ -11,7 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon-32x32.png" type="image/png">
+    <!-- external js -->
+    <script src="script.js" defer></script>
+    <title>Interactive Rating Component</title>
   </head>
   <!-- body edits here!-->
   <body
@@ -20,7 +24,7 @@
     <!-- rating form starts here -->
     <form
       action=""
-      class="bg-gradient-to-tr from-very-dark-blue to-my-dark-blue flex-col space-y-4 justify-center items-center  min-w-[300px] max-w-sm mx-auto rounded-3xl h-auto p-6 sm:mx-32 hidden"
+      class="bg-gradient-to-tr from-very-dark-blue to-my-dark-blue flex-col space-y-4 justify-center items-center  min-w-[300px] max-w-sm mx-auto rounded-3xl h-auto p-6 sm:mx-32 "
     >
       <!-- star icon image -->
       <div class="bg-my-dark-blue p-2 rounded-full inline-flex">
@@ -40,32 +44,32 @@
         <div class="flex justify-center gap-x-4 w-full max-w-xs ">
           <!--  -->
           <button
-            type="button  "
-            class="flex-auto  max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12  hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
+            type="button"
+            class="rating-button  max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12  hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
           >
             1
           </button>
           <button
-            type="button "
-            class="   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
+            type="button"
+            class="rating-button   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
           >
             2
           </button>
           <button
-            type="button "
-            class="   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
+            type="button"
+            class="rating-button   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
           >
             3
           </button>
           <button
-            type="button "
-            class="   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
+            type="button"
+            class="rating-button   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
           >
             4
           </button>
           <button
-            type="button "
-            class="   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
+            type="button"
+            class="rating-button   max-w-[3rem] text-my-light-grey bg-my-dark-blue p-3 rounded-full w-12 h-12 hover:bg-white hover:text-very-dark-blue hover:font-bold transition-colors 400ms active:bg-my-orange"
           >
             5
           </button>
@@ -74,26 +78,27 @@
         <div class="max-w-xs w-full">
           <button
             type="submit"
-            class="w-full  max-w-xs bg-my-orange text-md font-bold tracking-wider uppercase h-12  rounded-full hover:bg-white hover:font-bold transition-colors 400ms active:scale-105"
+            class=" submit-button w-full max-w-xs bg-my-orange text-md font-bold tracking-wider uppercase h-12  rounded-full hover:bg-white hover:font-bold transition-colors 400ms active:scale-105"
           >
             Submit
           </button>
         </div>
       </div>
     </form>
+    
 
 
 
     <!-- thank you state component -->
       <div
       id="thankYouComponent"
-      class="bg-gradient-to-tr from-very-dark-blue to-my-dark-blue grid justify-items-center text-center space-y-7  min-w-[200px] max-w-sm mx-auto rounded-3xl h-auto px-2 py-8 sm:mx-32 "
+      class="bg-gradient-to-tr from-very-dark-blue to-my-dark-blue grid justify-items-center text-center space-y-7  min-w-[200px] max-w-sm mx-auto rounded-3xl h-auto px-2 py-8 sm:mx-32 hidden"
     >
       <!-- thank you illustration -->
      
       <img src="/images/illustration-thank-you.svg" alt="star icon" class="w-50 h-50" />
       <!-- section shown box -->
-       <p id="selectedRating" class="bg-gray-800 p-2 rounded-full text-my-orange text-sm">You selected X out of 5</p>
+       <p id="rating-text" class="bg-gray-800 p-2 rounded-full text-my-orange text-sm">You selected X out of 5</p>
       
       <!-- container for heading and paragraph -->
       <div class="space-y-4 flex flex-col">
